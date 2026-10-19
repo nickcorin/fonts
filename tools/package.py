@@ -37,8 +37,7 @@ def package_family(family: str, expected_fonts: int) -> Path:
         raise ValueError(f"{family}: expected {expected_fonts} fonts, found {font_count}")
 
     contents = {path.relative_to(ROOT).as_posix(): path.read_bytes() for path in files}
-    if (ROOT / "LICENSE").is_file():
-        contents[f"{family}/LICENSE"] = (ROOT / "LICENSE").read_bytes()
+    contents["LICENSE"] = (ROOT / "LICENSE").read_bytes()
     destination = ROOT / "dist" / f"{family}.zip"
     with zipfile.ZipFile(destination, "w", compression=zipfile.ZIP_DEFLATED) as archive:
         for name, data in sorted(contents.items()):

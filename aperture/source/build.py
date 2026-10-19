@@ -22,6 +22,7 @@ from punctuation import build_punctuation
 
 ROOT = Path(__file__).resolve().parent.parent
 VERSION = "2.001"
+LICENSE_TEXT = (Path(__file__).resolve().parents[2] / "LICENSE").read_text(encoding="utf-8")
 
 
 @dataclass(frozen=True)
@@ -185,6 +186,9 @@ def compile_style(style: FontStyle) -> dict:
     legacy_family = "Aperture Medium" if style.name == "Medium" else "Aperture"
     legacy_style = "Regular" if style.name == "Medium" else style.name
     builder.setupNameTable({
+        "copyright": LICENSE_TEXT.splitlines()[0],
+        "licenseDescription": LICENSE_TEXT,
+        "licenseInfoURL": "https://openfontlicense.org",
         "familyName": legacy_family,
         "styleName": legacy_style,
         "typographicFamily": "Aperture",

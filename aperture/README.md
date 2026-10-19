@@ -44,3 +44,7 @@ python3 -m venv .venv
 The build writes all six font files and `aperture/manifest.json`. Verification checks exported contours, character coverage, font metadata, numeral advances, mark positioning, kerning, and HarfBuzz shaping. A missing `hb-shape` command stops verification.
 
 The editable outline construction is in [source](source). `capitals.py`, `lowercase.py`, `punctuation.py`, and `extended.py` define the glyphs. `font_engine.py` supplies geometry and TrueType conversion, and `build.py` compiles and verifies the family.
+
+## License
+
+This font software is licensed under the [SIL Open Font License 1.1](../LICENSE). No Reserved Font Names are declared. Keep `LICENSE` beside the `aperture` directory when extracting the download.

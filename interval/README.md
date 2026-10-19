@@ -37,3 +37,7 @@ python3 -m venv .venv
 ```
 
 The builders write TTF and WOFF2 files to each family's `fonts` directory. They check character coverage, outline validity, metrics, and accent shaping. The main builder also writes `manifest.json` with font metrics and character coverage.
+
+## License
+
+This font software, including Interval Barless and Interval Open, is licensed under the [SIL Open Font License 1.1](../LICENSE). No Reserved Font Names are declared. Keep `LICENSE` beside the `interval` directory when extracting the download.

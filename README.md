@@ -31,4 +31,4 @@ The command writes `dist/aperture.zip`, `dist/interval.zip`, and `dist/SHA256SUM
 
 ## License
 
-No reuse license is currently specified.
+The fonts, outline sources, build scripts, stylesheets, and accompanying documentation are licensed under the [SIL Open Font License 1.1](LICENSE). No Reserved Font Names are declared.
