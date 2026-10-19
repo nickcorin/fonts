@@ -6,24 +6,17 @@ import zipfile
 
 
 ROOT = Path(__file__).resolve().parent.parent
-FAMILIES = {"aperture": 6, "interval": 14}
+FAMILIES = {"aperture": 6, "interval": 6}
 
 
 def family_files(family: str) -> list[Path]:
     directory = ROOT / family
-    files = [directory / "README.md", directory / f"{family}.css", directory / "manifest.json"]
+    files = [directory / "README.md", directory / f"{family}.css", directory / "manifest.json",
+             directory / "previews/specimen.png"]
     files.extend(directory.glob("fonts/*.ttf"))
     files.extend(directory.glob("fonts/*.woff2"))
     files.extend(directory.glob("source/*.py"))
     files.append(directory / "source/requirements.txt")
-    for variant in sorted((directory / "variants").glob("*")):
-        if not variant.is_dir():
-            continue
-        files.extend(variant.glob("*.css"))
-        files.extend(variant.glob("*.md"))
-        files.extend(variant.glob("fonts/*.ttf"))
-        files.extend(variant.glob("fonts/*.woff2"))
-        files.extend(variant.glob("source/*.py"))
     return sorted(set(files))
 
 

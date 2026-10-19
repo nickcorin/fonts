@@ -72,9 +72,7 @@ def build_capitals(stroke_width:float)->dict[str,Glyph]:
     result={}
     a=poly([(40,0),(318,H),(362,H),(640,0),(640-w*.99,0),
             (340,H-w*1.50),(40+w*.99,0)])
-    a_outline=poly([(40,0),(318,H),(362,H),(640,0)])
-    crossbar=box(150,250-h/2,530,250+h/2).intersection(a_outline)
-    result['A']=Glyph(combine(a,crossbar),680)
+    result['A']=Glyph(a,680)
 
     b_outer=combine(right_form(65,315,575,H),right_form(65,0,605,370))
     b_inner=combine(right_form(65+w,350+h/2,575-w,H-h),
@@ -122,7 +120,9 @@ def build_capitals(stroke_width:float)->dict[str,Glyph]:
     result['Q']=Glyph(combine(o,stroke([(485,170),(715,-40)],w*.9)),790)
     # Bury the diagonal's upper cap inside the bowl, below the counter floor.
     diagonal=stroke([(315-295*160/305,465),(610,0)],w*.98)
-    result['R']=Glyph(combine(p,clip(diagonal,top=285+h)),680)
+    r=combine(p,clip(diagonal,top=285+h))
+    upper_stem=box(64,285+h,66+w,H-h)
+    result['R']=Glyph(r.difference(upper_stem),680)
     result['S']=Glyph(serpentine(55,585,H,w),650)
     result['T']=Glyph(combine(box(30,H-h,610,H),box(320-w/2,0,320+w/2,H)),640)
 

@@ -1,8 +1,10 @@
 # Interval
 
-Interval is a geometric Latin typeface with round bowls, tabular numerals, and selective stroke omissions. The family includes Regular, Medium, and Bold in TTF and WOFF2 formats.
+Interval is a geometric Latin typeface with round bowls, tabular numerals, a barless capital A, and an open upper stem on R. The family includes Regular, Medium, and Bold in TTF and WOFF2 formats.
 
-The fonts support 366 characters, including printable ASCII, Latin-1 Supplement, Latin Extended-A, punctuation, and combining accents. OpenType tables provide kerning, accent attachment, stacked marks, and dotless forms for accented i and j. Version 1.102.
+![Interval in Regular, Medium, and Bold, with uppercase and lowercase letters, numerals, and punctuation](previews/specimen.png)
+
+The fonts support 366 characters, including printable ASCII, Latin-1 Supplement, Latin Extended-A, punctuation, and combining accents. OpenType tables provide kerning, accent attachment, stacked marks, and dotless forms for accented i and j. Version 1.103.
 
 ## Install
 
@@ -16,13 +18,9 @@ h1 {
 }
 ```
 
-## Variants
+## Upgrade from separate variants
 
-[Interval Barless](variants/barless) removes the crossbar from capital A and its accented forms. It is available in Medium.
-
-[Interval Open](variants/open) combines that barless A with an omission in R's upper left stem. It is available in Regular, Medium, and Bold.
-
-Each variant has a separate installable family name and its own CSS file. The lowercase forms remain the same.
+Version 1.103 makes the barless A and open R standard across all three weights, including their accented forms. Uninstall Interval Barless and Interval Open, then install the latest Interval fonts. Replace those family names with `Interval` in your documents and stylesheets. Existing Interval users also receive these new capital forms when upgrading.
 
 ## Build
 
@@ -32,12 +30,10 @@ Use Python 3.10 or later. Install [HarfBuzz](https://github.com/harfbuzz/harfbuz
 python3 -m venv .venv
 .venv/bin/python -m pip install -r source/requirements.txt
 .venv/bin/python source/build.py
-.venv/bin/python variants/barless/source/build.py
-.venv/bin/python variants/open/source/build.py
 ```
 
-The builders write TTF and WOFF2 files to each family's `fonts` directory. They check character coverage, outline validity, metrics, and accent shaping. The main builder also writes `manifest.json` with font metrics and character coverage.
+The builder writes TTF and WOFF2 files to the `fonts` directory and checks character coverage, outline validity, metrics, and accent shaping. It also writes `manifest.json` with font metrics and character coverage.
 
 ## License
 
-This font software, including Interval Barless and Interval Open, is licensed under the [SIL Open Font License 1.1](../LICENSE). No Reserved Font Names are declared. Keep `LICENSE` beside the `interval` directory when extracting the download.
+This font software is licensed under the [SIL Open Font License 1.1](../LICENSE). No Reserved Font Names are declared. Keep `LICENSE` beside the `interval` directory when extracting the download.

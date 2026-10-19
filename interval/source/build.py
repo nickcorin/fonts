@@ -21,7 +21,7 @@ from punctuation import build_punctuation
 
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = "1.102"
+VERSION = "1.103"
 LICENSE_TEXT = (Path(__file__).resolve().parents[2] / "LICENSE").read_text(encoding="utf-8")
 
 

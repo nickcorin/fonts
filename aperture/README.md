@@ -2,6 +2,8 @@
 
 Aperture is a wide geometric display typeface with a barless A, an open E, and distinct lowercase forms. Version 2.001 includes Regular 400, Medium 500, and Bold 700 in desktop TTF and web WOFF2 formats.
 
+![Aperture in three weights with uppercase, lowercase, numerals, and punctuation](previews/specimen.png)
+
 ## Install and use
 
 Install the TTF files in [fonts](fonts) through your operating system's font manager. Applications list the three weights under Aperture. Older applications may list Medium separately as Aperture Medium.
