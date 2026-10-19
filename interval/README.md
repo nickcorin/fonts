@@ -16,6 +16,14 @@ h1 {
 }
 ```
 
+## Variants
+
+[Interval Barless](variants/barless) removes the crossbar from capital A and its accented forms. It is available in Medium.
+
+[Interval Open](variants/open) combines that barless A with an omission in R's upper left stem. It is available in Regular, Medium, and Bold.
+
+Each variant has a separate installable family name and its own CSS file. The lowercase forms remain the same.
+
 ## Build
 
 Use Python 3.10 or later. Install [HarfBuzz](https://github.com/harfbuzz/harfbuzz) with its `hb-shape` command available on your path, then run these commands from this directory:
@@ -24,6 +32,8 @@ Use Python 3.10 or later. Install [HarfBuzz](https://github.com/harfbuzz/harfbuz
 python3 -m venv .venv
 .venv/bin/python -m pip install -r source/requirements.txt
 .venv/bin/python source/build.py
+.venv/bin/python variants/barless/source/build.py
+.venv/bin/python variants/open/source/build.py
 ```
 
-The builder writes TTF and WOFF2 files to the `fonts` directory. It checks character coverage, outline validity, metrics, and accent shaping. It also writes `manifest.json` with font metrics and character coverage.
+The builders write TTF and WOFF2 files to each family's `fonts` directory. They check character coverage, outline validity, metrics, and accent shaping. The main builder also writes `manifest.json` with font metrics and character coverage.
