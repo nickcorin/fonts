@@ -1,0 +1,86 @@
+{
+  "version": "1.102",
+  "unitsPerEm": 1000,
+  "capHeight": 700,
+  "xHeight": 510,
+  "fonts": [
+    {
+      "family": "Interval",
+      "style": "Regular",
+      "weight": 400,
+      "stroke": 72,
+      "glyphs": 367,
+      "codepoints": 366,
+      "kerningPairs": 1218,
+      "spacingExceptions": 51,
+      "positionedMarks": 14,
+      "markBases": 251,
+      "ttf": "fonts/interval-regular.ttf",
+      "woff2": "fonts/interval-regular.woff2",
+      "characters": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſȘșȚțȷ̧̨̦̀́̂̃̄̆̇̈̊̋̌ẞ  –—‘’‚“”„•… ‹›⁄€™←↑→↓−≈≠≤≥",
+      "outlineBounds": [
+        -143,
+        -200,
+        1060,
+        902
+      ]
+    },
+    {
+      "family": "Interval",
+      "style": "Medium",
+      "weight": 500,
+      "stroke": 96,
+      "glyphs": 367,
+      "codepoints": 366,
+      "kerningPairs": 1235,
+      "spacingExceptions": 68,
+      "positionedMarks": 14,
+      "markBases": 251,
+      "ttf": "fonts/interval-medium.ttf",
+      "woff2": "fonts/interval-medium.woff2",
+      "characters": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſȘșȚțȷ̧̨̦̀́̂̃̄̆̇̈̊̋̌ẞ  –—‘’‚“”„•… ‹›⁄€™←↑→↓−≈≠≤≥",
+      "outlineBounds": [
+        -149,
+        -200,
+        1060,
+        912
+      ]
+    },
+    {
+      "family": "Interval",
+      "style": "Bold",
+      "weight": 700,
+      "stroke": 112,
+      "glyphs": 367,
+      "codepoints": 366,
+      "kerningPairs": 1255,
+      "spacingExceptions": 88,
+      "positionedMarks": 14,
+      "markBases": 251,
+      "ttf": "fonts/interval-bold.ttf",
+      "woff2": "fonts/interval-bold.woff2",
+      "characters": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſȘșȚțȷ̧̨̦̀́̂̃̄̆̇̈̊̋̌ẞ  –—‘’‚“”„•… ‹›⁄€™←↑→↓−≈≠≤≥",
+      "outlineBounds": [
+        -153,
+        -200,
+        1060,
+        919
+      ]
+    }
+  ],
+  "verification": {
+    "fontsVerified": 6,
+    "checks": [
+      "TTF and WOFF2 parsing, all outline decoding, and valid integer contours",
+      "Printable ASCII and complete U+00A0–U+017F coverage",
+      "Distinct lowercase and tabular numeral advances",
+      "One typographic family with 400, 500, and 700 weight metadata",
+      "Zero-advance combining marks and GPOS base/mark attachment",
+      "GPOS mark-to-mark attachment and GSUB dotless i/j handling",
+      "Connected ogonek contours and retained dot on ogonek-only i",
+      "Kerning collision checks across accented pairs and all supported letter/numeral pairs",
+      "Vertical bounds and matching 700/510 cap and x-height metadata",
+      "HarfBuzz positions: normalization, intervening lower marks, dotless i/j, stacked accents, and kerning"
+    ]
+  }
+}
